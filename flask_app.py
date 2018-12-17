@@ -32,8 +32,8 @@ def process_inputs():
     elif finalGrade > 100:
         outString = "Oof! Choose a more realistic target grade :("
     else:
-        outString = "Aim for a " + str(finalGrade) + "for a" + targetFinal + "."
+        outString = "Aim for a " + str(finalGrade) + " on the final for a final grade of " + str(targetFinal) + " in the class."
     return render_template("main_page.html", output=outString)
 
 def calc_target_final_grade(first, second, final):
-    return (10 * final) - (4.5 * (first - second))
+    return (10 * final) - (4.5 * (first + second))
