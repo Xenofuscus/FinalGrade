@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
-    <title>Form Input Template</title>
+    <title>Minimum Final Grade</title>
     <link rel="stylesheet" href="/static/css/custom.css">
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <!--<script src="../static/js/bootstrap.min.js"></script>-->
@@ -18,15 +18,15 @@
       <form action="{{ url_for('process_inputs') }}" method="post">
         <div class="form-group">
           <label for="input_name">1st nine weeks' Grade: </label>
-          <input type="number" min="0" max="100" class="form-control" name="firstQuart"  id="firstQuart" placeholder="87">
+          <input type="number" min="0" max="100" class="form-control" name="firstQuart"  id="firstQuart" placeholder="e.g 87">
         </div>
         <div class="form-group">
           <label for="input_name">2nd nine weeks' Grade: </label>
-          <input type="number" min="0" max="100" class="form-control" name="secondQuart"  id="secondQuart" placeholder="93">
+          <input type="number" min="0" max="100" class="form-control" name="secondQuart"  id="secondQuart" placeholder="e.g 93">
         </div>
         <div class="form-group">
           <label for="input_name">Target Semester Grade: </label>
-          <input type="number" min="0" max="100" class="form-control" name="targetSem"  id="targetSem" placeholder="90">
+          <input type="number" min="0" max="100" class="form-control" name="targetSem"  id="targetSem" placeholder="e.g 90">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
